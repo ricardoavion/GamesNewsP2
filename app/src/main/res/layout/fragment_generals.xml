@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+
+
+    <TextView
+        android:id="@+id/fragment_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prototype"
+        android:textSize="20sp"
+        android:layout_margin="4sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/fragment_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion corta de la noticia"
+        android:layout_margin="4sp"
+        android:textColor="#000"/>
+
+
+    <ImageView
+        android:layout_margin="4dp"
+        android:id="@+id/fragment_image"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        />
+
+    <TextView
+        android:id="@+id/fragment_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="noticia completa"
+        android:layout_margin="4sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
