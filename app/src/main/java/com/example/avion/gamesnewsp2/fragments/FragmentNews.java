@@ -82,7 +82,6 @@ public class FragmentNews extends Fragment {
             public void onResponse(Call<Login> call, Response<Login> response) {
                 if(response.isSuccessful()){
                     token = response.body().getToken();
-                    Toast.makeText(getContext(),"El token es: "+response.body().getToken(),Toast.LENGTH_SHORT).show();
 
                     getNews();
                 }
@@ -106,7 +105,6 @@ public class FragmentNews extends Fragment {
         call.enqueue(new Callback<List<News>>() {
             @Override
             public void onResponse(Call<List<News>> call, Response<List<News>> response) {
-                Toast.makeText(getContext(),"Conexion exitosa",Toast.LENGTH_SHORT).show();
                 for(int i = 0; i < response.body().size(); i++) {
 
                     String id = response.body().get(i).getId();
